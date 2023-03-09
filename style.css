@@ -1,0 +1,197 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(13, 13, 13);
+    margin: 0;
+}
+
+nav{
+    position: absolute;
+    position: fixed;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    top: 0em;
+    left: 0em;
+    width: 100%;
+}
+.topnav a {
+    float: right;
+    color: #bfb7a0;
+    padding: 10px 50px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: none;
+    color: rgb(206, 36, 36, 0.869);
+}
+
+.background{
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 900%;
+    color: rgb(206, 36, 36);
+    text-align: center;
+}
+
+
+/*page_1*/
+
+.about_text{
+  margin: auto;
+  width: 70%;
+  padding: 100px;
+  color:#bfb7a0;
+  text-align: center;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-between;
+    margin: 90px 35px;
+}
+
+.flex-container > div:not(:last-child) {
+    margin-right: 2%;
+}
+
+.rus_img1{
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+    border: 2px solid rgb(206, 36, 36);
+}
+
+.rus_img2{
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+    border: 2px solid rgb(206, 36, 36);
+    
+}
+.rus_img3{
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+    border: 2px solid rgb(206, 36, 36);
+}
+
+.rus_img4{
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+    border: 2px solid rgb(206, 36, 36);
+}
+
+
+.line_length{
+    width: 70%; 
+}
+
+/*page_2*/
+
+.carousel{
+    width: 50vw;
+    height: 50vh;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.carousel > ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.slide{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+}
+
+.song_img{
+    margin-left: auto;
+    margin-right: auto
+}
+
+.slide > img{
+    display: block;
+    width: 25%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0;
+}
+
+.carousel-button{
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #bfb7a0;
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+}
+
+.carousel-button:hover,
+.carousel-button:focus{
+    color: rgb(206, 36, 36);
+}
+
+.carousel-button:focus{
+    outline: 1px solid black;
+}
+
+.carousel-button.prev{
+    left: 1rem;
+}
+
+.carousel-button.next{
+    right: 1rem;
+}
+
+.pop_songs{
+    margin: auto;
+    width: 70%;
+    padding: 100px;
+    color:#bfb7a0;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.song_title{
+    text-align: center;
+    color: #bfb7a0;
+    font-size: 22px;
+}
+.song_artist{
+    text-align: center;
+    color: #bfb7a0;
+    font-size: 17px;
+}
