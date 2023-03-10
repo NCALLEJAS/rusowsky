@@ -8,41 +8,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RUSOWSKY</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"defer href="script.js"></script>
 </head>
 
 <body>
 
-    <div class="topnav">
-        <nav>
-            <ul>
-                <a href="other.html" >Other</a>
-                <a href="Events.html" >Events</a>
-                <a href="Media.html" >Media</a>
-                <a href="home.html" >Home</a>
+        <div class="topnav">
+        <nav >
+            <ul >
+                <a href="#Page_4" >Events</a>
+                <a href="#Page_3" >Media</a>
+                <a href="#Page_2">About</a>
+                <a href="#Page_1">Home</a>
             </ul>
         </nav>
-    </div>
+        </div>
 
-    <div class="container">
-        <img class= background src="images/mwah.jpeg" alt="rusowsky">
-        <div class="title">RUSOWSKY</div>
-    </div>
+    <!--Page_1-->
 
-    <div style="margin-bottom: 75px;"></div>
+   
 
-    <hr class="line_length">
+        <div id="Page_1" class="container">
+            <img class= background src="images/mwah.jpeg" alt="rusowsky" >
+            <div class="title">RUSOWSKY</div>
+         </div>
+        
 
-    <div class="about_text">
-        <h2 >Rusowsky, real  name: Ruslan Mediavilla, is a spanish artist from Madrid, Spain.
+    <!--Page_2-->
+
+        <h2 id="Page_2"> </h2>
+
+        <h2 class="title_about">ABOUT THE ARTIST</h2>
+    
+
+        <h2 class="about_text">
+             Rusowsky, real  name: Ruslan Mediavilla, is a spanish artist from Madrid, Spain.
              Ruslan was born in 1999 and his choice of genre is Bedroom Pop. 
              Top songs include So So, mwah :3, pikito, and more.
              His songs reach approximately 1,076,828 monthly listeners on Spotify.
         </h2>
-    </div>
 
-    <hr class="line_length">
 
-    <div class="flex-container">
+     <div class="flex-container">
 
         <div>
             <img class=rus_img1 src="images/rus1.png" alt="RUSOWSKY1"/>
@@ -57,8 +64,93 @@
             <img class=rus_img4 src="images/rus4.png" alt="RUSOWSKY4"/>
         </div>
         
+        </div>
+
+    <!--Page_3-->
+
+    <h2 id="Page_3"></h2>
+
+    <h2 class="title_about" >AUDIO</h2>
+
+    <selection aria-label="photos">
+       <div class="carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev">&#8701;</button>
+            <button class="carousel-button next" data-carousel-button="next">&#8702;</button>
+           <ul data-slides>
+             <li class="slide" data-active>
+                
+                <div style="display: flex; align-content: center; justify-content: center;">
+                    <iframe src="https://open.spotify.com/embed/track/3PIECzRdxCWyAz6Poe4Rcp?si=6a967a7f5de24a8a" width="299" height="405"  
+                    frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+
+             </li>
+             <li class="slide">
+                <div style="display: flex; align-content: center; justify-content: center;">
+                    <iframe src="https://open.spotify.com/embed/track/7s9xtALBX5o96TjRB7R078?si=fcec6cd74b07479f" width="299" height="405" 
+                     frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+             </li>
+             <li class="slide">
+                <div style="display: flex; align-content: center; justify-content: center;">
+                    <iframe src="https://open.spotify.com/embed/track/1wXeMZqegwYZ2zWtrwvXab?si=58dd421dc3284a80" width="299" height="405"  
+                    frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+             </li>
+             <li class="slide">
+                <div style="display: flex; align-content: center; justify-content: center;">
+                    <iframe src="https://open.spotify.com/embed/track/6NsrO4gen9oS2aQEQBUFQD?si=c97126a3ff9c4de7" width="299" height="405" 
+                     frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+             </li>
+             <li class="slide">
+                <div style="display: flex; align-content: center; justify-content: center;">
+                    <iframe src="https://open.spotify.com/embed/track/0tZytKFwVKhuTVAr1kJCSB?si=7a81545e99d24a8e" width="299" height="405" 
+                     frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+             </li>
+             <li class="slide">
+                <div style="display: flex; align-content: center; justify-content: center;">
+                    <iframe src="https://open.spotify.com/embed/track/7KSrH7DYKee5S8pRmNuoeB?si=c536c0f81e834ed9" width="299" height="405" 
+                     frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+             </li>
+           </ul>
+       </div>
+    </selection>
+    <div>
+        <h2 class="pop_songs">Popular Songs</h2>
+    </div>
+
+    <div style="margin-bottom: 90px;"></div>
+
+    <!--Page_4-->
+
+    <h2 id="Page_4"></h2>
+
+    <h2 class="title_about">UPCOMING EVENTS</h2>
+
+    <div class="flex-container">
+
+        
+            <div class="Page4_text">
+                <h2>Concert in Madrid</h2>
+                <p> Mar 24, 20:00h</p>
+                <a href="https://www.wegow.com/en-us/nr/purchase/concierto-de-rusowsky-en-madrid-la-riviera/" target="_blank" class="tickets">TICKETS</a>
+            </div>
+            <div class="Page4_text">
+                <h2>Mallorca Live Festival</h2>
+                <p> May 18, 17:00h</p> 
+                <a href="https://www.wegow.com/en-us/purchase/mallorca-live-festival/"target="_blank" class="tickets">TICKETS</a>
+            </div>
+            <div class="Page4_text">
+                <h2>Sonar Barcelona</h2>
+                <P>Jun 15, 13:00h</p>    
+                <a href="https://www.wegow.com/en-us/purchase/sonar-festival-barcelona/"target="_blank" class="tickets">TICKETS</a>
+            </div>
+            <div class="Page4_text">
+                <h2>Cruilia</h2>
+                <p>Jul 06 , 18:00h</p>
+                <a href="https://www.wegow.com/en-us/purchase/cruilla-festival/"target="_blank" class="tickets">TICKETS</a>
+            </div>
     </div>
     
+    <hr>
 </body>
 
 </html>
